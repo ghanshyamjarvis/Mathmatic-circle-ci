@@ -7,27 +7,9 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run test
+      - run: node app.js
 
-# Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
       - build
-
-# version: 2.1
-# jobs:
-#   build:
-#     docker:
-#       - image: cimg/node:14.0.0
-#     steps:
-#       - checkout
-#       - run: 
-#         - name: npm install
-#         - command: npm install
-#       - run:
-#         - name: test
-#         - command: npm test
-# workflows:
-#   build_and_test:
-#     jobs:
-#       - build
