@@ -1,6 +1,6 @@
 var calculator = require('./calculator');
 
-var a=10, b=;
+var a=10, b=5;
 
 
 console.log("Addition : "+calculator.add(a,b));
